@@ -1,0 +1,12 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
+  <!-- V shape left -->
+  <path d="M 200 250 L 280 450 L 320 450 L 240 250 Z" fill="#000000"/>
+  <!-- V shape right -->
+  <path d="M 480 250 L 400 450 L 360 450 L 440 250 Z" fill="#000000"/>
+  <!-- Top connecting line left -->
+  <path d="M 220 280 Q 280 300 340 320" stroke="#999999" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Top connecting line right -->
+  <path d="M 460 280 Q 400 300 340 320" stroke="#999999" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <!-- Center point -->
+  <circle cx="340" cy="360" r="30" fill="#000000"/>
+</svg>
