@@ -16,14 +16,20 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-background">
+    <div
+      className="min-h-screen bg-background bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/iniya.jpg')",
+        backgroundSize: "100%"
+      }}
+    >
 
       {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 max-w-7xl items-center justify-between">
+      <header className="sticky top-0 z-40 border-b border-border bg-white">
+        <div className="container flex h-16 max-w-7xl items-center justify-between px-8">
 
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <img src="/velmora-logo.svg" alt="Velmora Logo" className="h-10 w-auto" />
+            <img src="/copylogo.svg.png" alt="Velmora Logo" className="h-10 w-auto" />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -69,20 +75,29 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 lg:py-32 px-4 bg-gradient-to-b from-secondary to-background">
+      <section className="relative py-12 md:py-20 lg:py-32 px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/chyn.png')" }}>
         <div className="container mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-reguler text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
                 Luxury Refined
               </h1>
-              <p className="text-lg text-muted-foreground max-w-md">
+              <p className="text-lg text-white max-w-md">
                 Discover our exclusive collection of premium fashion pieces crafted with precision and elegance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/shop">
-                  <Button size="lg">Shop Now</Button>
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
+                              text-black font-semibold 
+                              shadow-xl shadow-yellow-600/30 
+                              hover:scale-105 hover:shadow-yellow-500/50 
+                              transition-all duration-300"
+                  >
+                    Shop Now
+                  </Button>
                 </Link>
                 <Link href="/collection">
                   <Button size="lg" variant="outline">View Collection</Button>
@@ -90,7 +105,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* HERO IMAGE DITAMBAHKAN */}
             <div className="hidden md:flex items-center justify-center">
               <div className="relative w-full max-w-sm aspect-square rounded-lg overflow-hidden border border-border">
                 <Image
