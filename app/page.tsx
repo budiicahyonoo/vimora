@@ -20,7 +20,7 @@ export default function Home() {
       className="min-h-screen bg-background bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/iniya.jpg')",
-        backgroundSize: "100%"
+        backgroundSize: "cover"
       }}
     >
 
@@ -75,9 +75,9 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 lg:py-32 px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/chyn.png')" }}>
+      <section className="relative min-h-screen py-12 md:py-20 lg:py-32 px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/chyn.png')" }}>
         <div className="container mx-auto max-w-7xl px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-2 gap-8 items-center min-h-[80vh]">
 
             <div className="space-y-6">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-reguler text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden md:flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <div className="relative w-full max-w-sm aspect-square rounded-lg overflow-hidden border border-border">
                 <Image
                   src="/Logo Velmora.png"
